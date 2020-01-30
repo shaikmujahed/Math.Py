@@ -1,0 +1,13 @@
+import math
+def s_r_tri(opp,adjacent,u_deg=False):
+    hypotenuse=(opp**2 + adjacent**2)**0.5
+    angle=math.atan(opp/adjacent)
+    if u_deg==True:
+        angle=math.degrees(angle)
+
+    return (hypotenuse,angle)
+
+
+
+print(s_r_tri(3.0,4.0))
+print(s_r_tri(3.0,4.0,u_deg=True))
