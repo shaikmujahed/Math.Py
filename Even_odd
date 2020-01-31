@@ -1,0 +1,28 @@
+def n_changer(char):
+    even_char=""
+    odd_char=""
+
+    for i in range(0, len(char)):
+      if i % 2==0:
+        even_char +=char[i]
+      else:
+         odd_char += char[i]
+    return  int(even_char) + int(odd_char)
+string="12345"
+result=n_changer(string)
+print(string + "->" + str(result))
+
+def change(string):
+
+    even=""
+    odd=""
+    for i in range(0, len(string)):
+        if i % 2==0:
+            even +=string[i]
+        else:
+            odd +=string[i]
+    return int(even) + int(odd)
+
+char="456789"
+result=change(char)
+print(char +"->" + str(result))
